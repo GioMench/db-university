@@ -16,5 +16,17 @@
       => Showing rows 0 - 24 (286 total, Query took 0.0009 seconds.)
 
 5 Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020 (21)
-    -
+    - SELECT * FROM `exams` WHERE date like '2020-06-20' and TIME(hour) > '14:00:00';
+      =>Showing rows 0 - 20 (21 total, Query took 0.0087 seconds.)
+
+6 Selezionare tutti i corsi di laurea magistrale (38)
+    - SELECT * FROM `degrees` WHERE level like 'magistrale';
+      =>Showing rows 0 - 24 (38 total, Query took 0.0023 seconds.)
  
+7 Da quanti dipartimenti è composta l'università? (12)
+    - SELECT * FROM `departments`;
+      =>  Showing rows 0 - 11 (12 total, Query took 0.0006 seconds.)
+
+8 Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
+    -  SELECT * FROM `teachers` WHERE phone IS NULL;
+      =>    

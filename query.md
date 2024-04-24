@@ -29,4 +29,4 @@
 
 8 Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
     -  SELECT * FROM `teachers` WHERE phone IS NULL;
-      =>    
+      =>Showing rows 0 - 24 (50 total, Query took 0.0007 seconds.)

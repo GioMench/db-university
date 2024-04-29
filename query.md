@@ -30,3 +30,7 @@
 8 Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
     -  SELECT * FROM `teachers` WHERE phone IS NULL;
       =>Showing rows 0 - 24 (50 total, Query took 0.0007 seconds.)
+
+
+    #ATTENZIONE CORREZIONE
+      molto ingegnoso mettere 265.25 per gli anni bisestili, pero' ancora piu' precisa sarebbe stata la funzione TIMESTAMPDIFF. La 4 va bene anche se LIKE e' preferibile con ricerche nel testo e l'uso di %TESTO% cosi cerchi all'interno una corrispondenza, mentre per quando e' identico il valore = funziona meglio. Idem per tutti gli altri dove hai usato like invece di uguale =.
